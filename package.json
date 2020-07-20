@@ -5,7 +5,8 @@
         "build": "webpack",
         "test:live": "webpack-dev-server --config ./webpack.tests.js",
         "pretest": "fable-splitter --config splitter.tests.js",
-        "test": "mocha ./tests-js"
+        "test": "mocha ./tests-js",
+        "debug-compiled-js": "fable-splitter --config splitter.config.js"
     },
     "dependencies": {
         "react": "^16.9.0",
