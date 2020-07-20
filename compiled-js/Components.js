@@ -24,7 +24,7 @@ function Counter() {
   var patternInput = useState(0);
   var children = (0, _List.ofArray)([(xs = (0, _List.ofArray)([(properties = new _Types.List((0, _Interop.mkStyle)("marginRight", 5), new _Types.List()), (0, _Interop.mkAttr)("style", (0, _Util.createObj)(properties, 0))), (0, _Interop.mkAttr)("onClick", function handler(_arg1) {
     patternInput[1](patternInput[0] + 1);
-  }), (0, _Interop.mkAttr)("children", "Increment!")]), (0, _Interop.reactElement)("button", (0, _Util.createObj)(xs, 0))), (xs$$1 = (0, _List.ofArray)([(properties$$2 = new _Types.List((0, _Interop.mkStyle)("marginLeft", 5), new _Types.List()), (0, _Interop.mkAttr)("style", (0, _Util.createObj)(properties$$2, 0))), (0, _Interop.mkAttr)("onClick", function handler$$1(_arg2) {
+  }), (0, _Interop.mkAttr)("children", "Increment")]), (0, _Interop.reactElement)("button", (0, _Util.createObj)(xs, 0))), (xs$$1 = (0, _List.ofArray)([(properties$$2 = new _Types.List((0, _Interop.mkStyle)("marginLeft", 5), new _Types.List()), (0, _Interop.mkAttr)("style", (0, _Util.createObj)(properties$$2, 0))), (0, _Interop.mkAttr)("onClick", function handler$$1(_arg2) {
     patternInput[1](patternInput[0] - 1);
   }), (0, _Interop.mkAttr)("children", "Decrement")]), (0, _Interop.reactElement)("button", (0, _Util.createObj)(xs$$1, 0))), (0, _Interop.reactElement)("h1", {
     children: new Int32Array([patternInput[0]])

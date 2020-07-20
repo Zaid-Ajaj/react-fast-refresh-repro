@@ -3,15 +3,13 @@ module Components
 open Feliz
 open Fable.Core.JsInterop
 
-let useState(value: 't) = import "useState" "react"
-
 let Counter() =
-    let (count, setCount) = useState(0)
+    let (count, setCount) = React.useState(0)
     Html.div [
         Html.button [
-            prop.style [ style.marginRight 5 ]
+            prop.style [ style.marginRight 5; style.backgroundColor.red ]
             prop.onClick (fun _ -> setCount(count + 1))
-            prop.text "Increment!"
+            prop.text "Increment"
         ]
 
         Html.button [

@@ -17,4 +17,4 @@ var createElement = _react.createElement;
 exports.createElement = createElement;
 var renderDOM = _reactDom.render;
 exports.renderDOM = renderDOM;
-renderDOM(createElement(Counter, {}), document.getElementById("feliz-app"));
+renderDOM(createElement(Counter), document.getElementById("feliz-app"));

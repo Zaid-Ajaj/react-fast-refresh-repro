@@ -101,7 +101,9 @@ module.exports = {
             new CopyWebpackPlugin([{ from: resolve(CONFIG.assetsDir) }]),
         ])
         : commonPlugins.concat([
-            new ReactRefreshWebpackPlugin(),
+            new ReactRefreshWebpackPlugin({
+                include: /\.(f|j)s$/
+            }),
         ]),
     resolve: {
         // See https://github.com/fable-compiler/Fable/issues/1490
